@@ -1,5 +1,8 @@
-/*
-    ./client/index.js
-    which is the webpack entry file
-*/
-console.log('Hey This is stackoverflow react app!!')
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import * as serviceWorker from './serviceWorker';
+
+ReactDOM.render(<App />, document.getElementById('root'));
+
+serviceWorker.register();
